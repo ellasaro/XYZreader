@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -45,6 +46,8 @@ public class ArticleListActivity extends ActionBarActivity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private TextView mXyz;
+    private TextView mReader;
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
     // Use default locale format
@@ -58,6 +61,12 @@ public class ArticleListActivity extends ActionBarActivity implements
         setContentView(R.layout.activity_article_list);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mXyz = (TextView) findViewById(R.id.tv_xyz);
+        mReader = (TextView) findViewById(R.id.tv_reader);
+        mXyz.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Merriweather-Regular.ttf"));
+        mXyz.setText("xyz");
+        mReader.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
+        mReader.setText("reader");
 
 
         final View toolbarContainerView = findViewById(R.id.collapsingToolbar);
