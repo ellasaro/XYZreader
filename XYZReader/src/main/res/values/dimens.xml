@@ -7,10 +7,13 @@
     <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
 
     <dimen name="fab_elevation">6dp</dimen>
-    <dimen name="fab_press_translation_z">8dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
 
     <dimen name="toolbar_text_size">30sp</dimen>
     <dimen name="toolbar_text_bottom_margin">8dp</dimen>
+
+    <dimen name="appBar_elevation">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
 
 </resources>
